@@ -3,6 +3,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hivepractice/db/model/studentmodel.dart';
 
 import 'package:hivepractice/views/homescreen.dart';
+import 'package:hivepractice/views/sharedscreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Hive',
-      home: HomeScreen(),
+      home: SharedScreen(),
     );
   }
 }
