@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hivepractice/db/model/studentmodel.dart';
+import 'package:hivepractice/views/apinames.dart';
 
 import 'package:hivepractice/views/homescreen.dart';
 import 'package:hivepractice/views/sharedscreen.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Hive',
-      home: SharedScreen(),
+      home: ApiScreen(),
     );
   }
 }
