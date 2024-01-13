@@ -40,8 +40,8 @@ class _ApiScreenState extends State<ApiScreen> {
             future: nameService.fetchNames(),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return Center(
-                  child: CircularProgressIndicator(),
+                return const Center(
+                  child: const CircularProgressIndicator(),
                 );
               } else if (snapshot.hasError) {
                 return Center(
@@ -61,7 +61,7 @@ class _ApiScreenState extends State<ApiScreen> {
                                 nameService.deleteName(names.id!);
                               });
                             },
-                            icon: Icon(Icons.delete)),
+                            icon: const Icon(Icons.delete)),
                       );
                     },
                   ),
